@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         }.start()
 
         Thread {
-            val user = apiClient.getUsers()
+            val user = apiClient.getUser(1)
             Log.d("@dev", "Usuario: $user")
         }.start()
     }

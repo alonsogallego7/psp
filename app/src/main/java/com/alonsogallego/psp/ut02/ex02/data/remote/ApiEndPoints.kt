@@ -1,6 +1,5 @@
 package com.alonsogallego.psp.ut02.ex02.data.remote
 
-import com.alonsogallego.psp.ut02.ex01.data.remote.models.UserApiModel
 import com.alonsogallego.psp.ut02.ex02.data.remote.models.AlertApiModel
 import retrofit2.Call
 import retrofit2.http.GET
@@ -8,9 +7,9 @@ import retrofit2.http.Path
 
 interface ApiEndPoints {
 
-    @GET("alerts")
+    @GET("https://plagricola.sitehub.es/api/public/alerts")
     fun getAlerts(): Call<List<AlertApiModel>>
 
-    @GET("alerts/{alertId}")
-    fun getAlert(@Path("userId") alertId: Int): Call<AlertApiModel>
+    @GET("https://plagricola.sitehub.es/api/public/alerts/{alert_id}")
+    fun getAlert(@Path("alert_id") alertId: Int): Call<AlertApiModel>
 }
