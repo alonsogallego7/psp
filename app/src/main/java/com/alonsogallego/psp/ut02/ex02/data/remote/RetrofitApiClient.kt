@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitApiClient {
-    private val urlEndPoint = "https://plagricola.sitehub.es/api/public/alerts"
+    private val urlEndPoint = "https://plagricola.sitehub.es/api/public/"
     private var apiEndPoints: ApiEndPoints
 
     init {
@@ -34,7 +34,7 @@ class RetrofitApiClient {
         }
     }
 
-    fun getAlert(alertId: Int): AlertApiModel?{
+    fun getAlert(alertId: String): AlertApiModel?{
         val alertCall = apiEndPoints.getAlert(alertId)
         val response = alertCall.execute()
         return if (response.isSuccessful) {

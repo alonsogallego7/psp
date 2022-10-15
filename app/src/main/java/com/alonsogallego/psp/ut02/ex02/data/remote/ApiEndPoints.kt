@@ -7,9 +7,9 @@ import retrofit2.http.Path
 
 interface ApiEndPoints {
 
-    @GET("https://plagricola.sitehub.es/api/public/alerts")
+    @GET("alerts")
     fun getAlerts(): Call<List<AlertApiModel>>
 
-    @GET("https://plagricola.sitehub.es/api/public/alerts/{alert_id}")
-    fun getAlert(@Path("alert_id") alertId: Int): Call<AlertApiModel>
+    @GET("alerts/{alertId}")
+    fun getAlert(@Path("alertId") alertId: String): Call<AlertApiModel>
 }
