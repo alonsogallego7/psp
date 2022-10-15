@@ -20,8 +20,9 @@ class Ut02Ex02Activity : AppCompatActivity() {
         }.start()
 
         Thread {
-            val alert = apiClient.getAlert("1")
+            val alert = apiClient.getAlert(3053125)
             Log.d("@dev", "Alerta: $alert")
         }.start()
+
     }
 }
