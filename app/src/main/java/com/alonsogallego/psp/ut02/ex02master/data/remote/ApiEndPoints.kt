@@ -1,4 +1,4 @@
-package com.alonsogallego.psp.ut02.ex02.data.remote
+package com.alonsogallego.psp.ut02.ex02master.data.remote
 
 import com.alonsogallego.psp.ut02.ex02master.data.remote.models.AlertDetailApiModel
 import com.alonsogallego.psp.ut02.ex02master.data.remote.models.AlertsApiModel

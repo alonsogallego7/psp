@@ -16,7 +16,7 @@
         android:theme="@style/Theme.PSP"
         tools:targetApi="31">
         <activity
-            android:name=".ut02.ex02.presentation.Ut02Ex02Activity"
+            android:name=".ut02.ex02master.presentation.Ut02Ex02Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.alonsogallego.psp.ut02.ex02.presentation
+package com.alonsogallego.psp.ut02.ex02master.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
